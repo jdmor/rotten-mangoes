@@ -1,6 +1,11 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all
+    if params[:commit]
+      p params
+      @movies = Movie.where("title LIKE ?", "%#{params[:title]}%")
+    else
+      @movies = Movie.all
+    end
   end
 
   def show
