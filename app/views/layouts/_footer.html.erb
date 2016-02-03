@@ -5,5 +5,8 @@
     <% else %>
       <%= link_to 'Log in', new_session_path %> | <%= link_to 'Sign up', new_user_path %>
     <% end %>
+    <% if current_user && current_user.admin %>
+      | <%= link_to 'Manage Users', admin_users_path %>
+    <% end %>
   </small>
 </footer>
