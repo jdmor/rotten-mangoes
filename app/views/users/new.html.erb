@@ -31,7 +31,12 @@
     <%= f.label :password_confirmation %><br>
     <%= f.text_field :password_confirmation %>
   </div>
+  <% if current_user && current_user.admin %>
+    <div>
+      <%= f.label :admin, 'Make admin' %><br>
+      <%= f.check_box :admin %>
+    </div>
+  <% end %>
   <div><%= f.submit 'Submit' %></div>
-
 
 <% end %>

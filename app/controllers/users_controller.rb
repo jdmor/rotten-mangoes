@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+
   def new
     @user = User.new
   end
@@ -12,13 +12,13 @@ class UsersController < ApplicationController
       redirect_to movies_path, notice: "Welcome aboard, #{@user.firstname}!!"
     else
       render :new
-    end 
+    end
   end
 
   protected
 
   def user_params
-    params.require(:user).permit(:email, :firstname, :lastname, :password, :password_confirmation)
+    params.require(:user).permit(:email, :firstname, :lastname, :password, :password_confirmation, :admin)
   end
 
 end
