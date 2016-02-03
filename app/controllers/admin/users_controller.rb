@@ -12,6 +12,7 @@ class Admin::UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.admin = true
 
     if @user.save
       session[:user_id] = @user.id
