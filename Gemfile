@@ -44,7 +44,12 @@ gem 'bcrypt-ruby', '~> 3.0x.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use Pry for debugging
+gem 'pry'
+
+# Use RMagick and Carrierwave for image uploading
 gem 'rmagick'
 gem 'carrierwave'
 
+# Use Kaminari for pagination
 gem 'kaminari'
