@@ -4,7 +4,7 @@
     <div>
       <%= pluralize(@user.errors.count, 'error') %> prevented the account from being created:
       <ul>
-        <%= @user.errors.full_messages.each do |msg| %>
+        <% @user.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>
       </ul>
