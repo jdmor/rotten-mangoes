@@ -36,7 +36,21 @@ class Movie < ActiveRecord::Base
 
   def self.query?(params)
     (params[:title] && !params[:title].empty?) ||
-    (params[:director] && !params[:director].empty?)
+    (params[:director] && !params[:director].empty?) ||
+    (params[:runtime_in_minutes] && !params[:runtime_in_minutes].empty?)
+  end
+
+  def self.runtime_in_minutes(filter)
+    case filter
+    when 'less_than_90'
+      where('runtime_in_minutes < 90')
+    when 'between_90_and_120'
+      where('runtime_in_minutes BETWEEN 90 AND 120')
+    when 'greater_than_120'
+      where('runtime_in_minutes > 120')
+    else
+      where('')
+    end
   end
 
 end

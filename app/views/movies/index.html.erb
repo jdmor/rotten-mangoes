@@ -12,6 +12,18 @@
     <%= text_field_tag :director, params[:director]  %>
   </div>
   <div>
+    <%= label_tag :runtime_in_minutes %><br>
+    <%= select_tag :runtime_in_minutes, options_for_select(
+      [
+        ['', ''],
+        ['Under 90 minutes', 'less_than_90'],
+        ['Between 90 and 120 minutes', 'between_90_and_120'],
+        ['Over 120 minutes', 'greater_than_120']
+      ],
+      params[:runtime_in_minutes]
+    )%>
+  </div>
+  <div>
     <%= submit_tag 'Search' %>
   </div>
 <% end %>

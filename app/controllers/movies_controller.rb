@@ -1,7 +1,10 @@
 class MoviesController < ApplicationController
   def index
     if Movie.query?(params)
-      @movies = Movie.title(params[:title]).director(params[:director])
+      # binding.pry
+      @movies = Movie.title(params[:title])
+      @movies = @movies.director(params[:director])
+      @movies = @movies.runtime_in_minutes(params[:runtime_in_minutes])
     else
       @movies = Movie.all
     end
