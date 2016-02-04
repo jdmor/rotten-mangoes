@@ -8,6 +8,10 @@
     <%= text_field_tag :title, params[:title]  %>
   </div>
   <div>
+    <%= label_tag :director %><br>
+    <%= text_field_tag :director, params[:director]  %>
+  </div>
+  <div>
     <%= submit_tag 'Search' %>
   </div>
 <% end %>

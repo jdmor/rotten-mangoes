@@ -1,8 +1,7 @@
 class MoviesController < ApplicationController
   def index
-    if params[:commit]
-      p params
-      @movies = Movie.where("title LIKE ?", "%#{params[:title]}%")
+    if Movie.query?(params)
+      @movies = Movie.title(params[:title]).director(params[:director])
     else
       @movies = Movie.all
     end

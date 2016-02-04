@@ -21,6 +21,9 @@ class Movie < ActiveRecord::Base
 
   validate :release_date_is_in_the_past
 
+  scope :title,    -> (title) { where("title LIKE ? ", "%#{title}%")}
+  scope :director, -> (director) { where("director LIKE ? ", "%#{director}%")}
+
   def release_date_is_in_the_past
     if release_date.present?
       errors.add(:release_date, 'should be in the past') if release_date > Date.today
@@ -29,6 +32,11 @@ class Movie < ActiveRecord::Base
 
   def review_average
     reviews.sum(:rating_out_of_ten)/reviews.size if reviews.any?
+  end
+
+  def self.query?(params)
+    (params[:title] && !params[:title].empty?) ||
+    (params[:director] && !params[:director].empty?)
   end
 
 end
