@@ -8,7 +8,6 @@
       <th>Last Name</th>
       <th>Email</th>
       <th>Admin</th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -20,6 +19,11 @@
         <td><%= user.email %></td>
         <td><%= user.admin %></td>
         <td><%= link_to 'Edit', edit_admin_user_path(user) %></td>
+        <td>
+          <%= form_for [:admin, user], method: :delete do |f| %>
+            <%= f.submit 'Delete' %>
+          <% end %>
+        </td>
       </tr>
     <% end %>
   </tbody>

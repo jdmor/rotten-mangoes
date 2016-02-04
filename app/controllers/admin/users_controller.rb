@@ -26,6 +26,16 @@ class Admin::UsersController < ApplicationController
     end
   end
 
+  def destroy
+    @user = User.find(params[:id])
+
+    if @user.destroy
+      redirect_to admin_users_path
+    else
+      redirect_to admin_users_path, notice: 'User not deleted.'
+    end
+  end
+
   protected
 
   def restrict_user_access
