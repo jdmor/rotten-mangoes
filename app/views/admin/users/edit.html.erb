@@ -1,0 +1,5 @@
+<h2>Edit <%= @user.full_name %>'s account</h2>
+
+<%= form_for [:admin, @user] do |f| %>
+    <%= render '/users/form', f: f %>
+<% end %>

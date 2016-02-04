@@ -16,6 +16,10 @@ class ApplicationController < ActionController::Base
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 
+  def user_params
+    params.require(:user).permit(:email, :firstname, :lastname, :password, :password_confirmation, :admin)
+  end
+
   helper_method :current_user
 
 end
