@@ -1,0 +1,5 @@
+<h1>Create User Account</h1>
+
+<%= form_for [:admin, @user] do |f| %>
+    <%= render '/users/form', f: f %>
+<% end %>
