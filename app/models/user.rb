@@ -17,8 +17,16 @@ class User < ActiveRecord::Base
   validates :password,
     length: { in: 6..20 }, on: :create
 
+  before_destroy :notify_user
+
   def full_name
     "#{firstname} #{lastname}"
+  end
+
+  protected
+
+  def notify_user
+    UserMailer.account_deleted_email(self).deliver
   end
 
 end
