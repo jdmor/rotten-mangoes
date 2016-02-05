@@ -1,8 +1,7 @@
 class MoviesController < ApplicationController
   def index
     if Movie.query?(params)
-      @movies = Movie.title(params[:title])
-      @movies = @movies.director(params[:director])
+      @movies = Movie.title_or_director(params[:search_term])
       @movies = @movies.runtime_in_minutes(params[:runtime_in_minutes])
     else
       @movies = Movie.all

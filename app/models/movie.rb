@@ -21,9 +21,6 @@ class Movie < ActiveRecord::Base
 
   validate :release_date_is_in_the_past
 
-  scope :title,    -> (title) { where("title LIKE ? ", "%#{title}%")}
-  scope :director, -> (director) { where("director LIKE ? ", "%#{director}%")}
-
   def release_date_is_in_the_past
     if release_date.present?
       errors.add(:release_date, 'should be in the past') if release_date > Date.today
@@ -37,10 +34,11 @@ class Movie < ActiveRecord::Base
   class << self
 
     def query?(params)
-      (params[:title] && !params[:title].empty?) ||
-      (params[:director] && !params[:director].empty?) ||
+      (params[:search_term] && !params[:search_term].empty?) ||
       (params[:runtime_in_minutes] && !params[:runtime_in_minutes].empty?)
     end
+
+    # Custom scope
 
     def runtime_in_minutes(filter)
       case filter
@@ -55,6 +53,10 @@ class Movie < ActiveRecord::Base
       end
     end
 
+    def title_or_director(term)
+      term = '%' + term + '%'
+      where("title LIKE ? OR director LIKE ?", term, term)
+    end
   end
 
 end
