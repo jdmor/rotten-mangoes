@@ -5,7 +5,7 @@
   <div class='movie-card-info'>
     <span class='movie-card-title'><%= movie.title %></span><br>
     <span>Directed by <%= movie.director %></span><br>
-    <span><%= movie.runtime_in_minutes %> minutes | <%= movie.review_average %>/10</span><br>
+    <span><%= movie.runtime_in_minutes %> minutes <span class='grey-text text-lighten-1'>|</span> <%= movie.review_average %>/10</span><br>
     <%= link_to 'Details', movie_path(movie) %>
   </div>
 </div>
