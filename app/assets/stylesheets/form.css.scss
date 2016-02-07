@@ -39,12 +39,6 @@
 
 }
 
-@media screen and (max-width: 992px) {
-  .movie-card:nth-child(4n) {
-    clear: left;
-  }
-}
-
 .movie-card-info {
   padding: .5rem;
   padding-bottom: 1rem;
@@ -53,4 +47,16 @@
 
 .movie-card-title {
   font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .movie-card:nth-child(4n) {
+    clear: left;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .movie-card:nth-child(5n) {
+    clear: left;
+  }
 }
