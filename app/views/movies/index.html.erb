@@ -1,30 +1,26 @@
 <div class='container'>
 
 <div class='row section'>
-  <div class='col s12 m8 offset-m2'>
+  <div class='col s12'>
   <div class='card blue-grey darken-4'>
     <div class='card-content white-text'>
     <%= form_tag movies_path, method: :get do %>
 
       <div class='row'>
-        <div class='input-field col s12'>
+        <div class='input-field col s12 m8'>
           <%= text_field_tag :search_term, params[:search_term] %>
           <%= label_tag :search_term, 'Search by title and director'%>
         </div>
-      </div>
 
-      <div class='row'>
-        <div class='input-field col s12'>
-          <%= select_tag :runtime_in_minutes, options_for_select(
-            [
-              ['Any length', ''],
-              ['Under 90 minutes', 'less_than_90'],
-              ['Between 90 and 120 minutes', 'between_90_and_120'],
-              ['Over 120 minutes', 'greater_than_120']
-            ],
-            params[:runtime_in_minutes]
-          )%>
-          <%= label_tag :runtime_in_minutes, 'Filter by movie length' %>
+        <div class='input-field col s12 m4'>
+          <%= select_tag :runtime_in_minutes,
+            options_for_select([
+              ['Filter by length', ''],
+              ['Under 90 mins', 'less_than_90'],
+              ['Between 90 and 120 mins', 'between_90_and_120'],
+              ['Over 120 mins', 'greater_than_120']],
+              params[:runtime_in_minutes])
+          %>
         </div>
       </div>
 
