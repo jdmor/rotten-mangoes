@@ -13,9 +13,15 @@
   }
 }
 
-.list-movies > .col {
-  padding: 0;
+.row.list-movies {
+  margin-left: 0;
+  margin-right: 0;
+
+  > .col {
+    padding: 0;
+  }
 }
+
 
 @media screen and (max-width: 992px) {
   .movie-card:nth-child(4n) {
