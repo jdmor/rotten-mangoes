@@ -1,3 +1,33 @@
 .card-content form label, .card-content span.caret {
   color: inherit;
 }
+
+// To order later
+
+
+.image-full {
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.list-movies > .col {
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .movie-card:nth-child(4n) {
+    clear: left;
+  }
+}
+
+.movie-card-info {
+  padding: .5rem;
+  padding-bottom: 1rem;
+}
+
+.movie-card-title {
+  font-weight: 600;
+}

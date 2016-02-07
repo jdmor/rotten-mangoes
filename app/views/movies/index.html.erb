@@ -39,14 +39,14 @@
   </div>
   </div>
 </div>
+</div>
 
-  <%= link_to 'Submit a movie!', new_movie_path %>
+<div class='container'>
+  <h4>Amazing Videos</h4>
+</div>
 
-
-
-
-  <% @movies.each do |movie| %>
-    <%= render 'movie', movie: movie %>
+<div class='row list-movies'>
+  <% @movies.each.with_index do |movie, index| %>
+    <%= render 'movie', movie: movie, index: index %>
   <% end %>
-
 </div>
