@@ -11,17 +11,12 @@
           <li><%= render '/layouts/log_out'%></li>
         </ul>
 
-        <div class='right side-nav' id='nav-mobile'>
-          <div class='search-wrapper'>
-            <%= render '/movies/search' %>
-          </div>
-          <ul>
-            <%= render '/layouts/log_in_sign_up', desktop_style: '' %>
-            <li><%= link_to 'Submit movie', new_movie_path %></li>
-            <li><%= render '/layouts/manage_users' %></li>
-            <li><%= render '/layouts/log_out'%></li>
-          </ul>
-        </div>
+        <ul class='right side-nav' id='nav-mobile'>
+          <%= render '/layouts/log_in_sign_up', desktop_style: '' %>
+          <li><%= link_to 'Submit movie', new_movie_path %></li>
+          <li><%= render '/layouts/manage_users' %></li>
+          <li><%= render '/layouts/log_out'%></li>
+        </ul>
       </div>
     </div>
   </nav>
