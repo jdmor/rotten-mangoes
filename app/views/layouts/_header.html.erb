@@ -1,27 +1,28 @@
 <header>
   <nav>
-    <div class="nav-wrapper">
-      <%= link_to 'Rotten Mangoes', root_path, class: 'brand-logo' %>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><%= link_to 'Submit movie', new_movie_path %></li>
-        <li><%= render '/layouts/manage_users' %></li>
-        <%= render '/layouts/log_in_sign_up', desktop_style: 'waves-effect waves-light btn' %>
-        <li><%= render '/layouts/log_out'%></li>
-      </ul>
+    <div class='container'>
+      <div class="nav-wrapper">
+        <%= link_to 'Rotten Mangoes', root_path, class: 'brand-logo' %>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><%= link_to 'Submit movie', new_movie_path %></li>
+          <li><%= render '/layouts/manage_users' %></li>
+          <%= render '/layouts/log_in_sign_up', desktop_style: 'waves-effect waves-light btn' %>
+          <li><%= render '/layouts/log_out'%></li>
+        </ul>
 
-      <div class='right side-nav' id='nav-mobile'>
+        <div class='right side-nav' id='nav-mobile'>
           <div class='search-wrapper'>
             <%= render '/movies/search' %>
           </div>
-        <ul>
-          <%= render '/layouts/log_in_sign_up', desktop_style: '' %>
-          <li><%= link_to 'Submit movie', new_movie_path %></li>
-          <li><%= render '/layouts/manage_users' %></li>
-          <li><%= render '/layouts/log_out'%></li>
-        </ul>
+          <ul>
+            <%= render '/layouts/log_in_sign_up', desktop_style: '' %>
+            <li><%= link_to 'Submit movie', new_movie_path %></li>
+            <li><%= render '/layouts/manage_users' %></li>
+            <li><%= render '/layouts/log_out'%></li>
+          </ul>
+        </div>
       </div>
-
     </div>
   </nav>
 </header>
