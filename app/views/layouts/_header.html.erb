@@ -1,13 +1,13 @@
 <header>
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Rotten Mangoes</a>
+      <%= link_to 'Rotten Mangoes', root_path, class: 'brand-logo' %>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><%= link_to 'Submit movie', new_movie_path %></li>
-        <li><%= link_to 'Manage users', admin_users_path %></li>
-        <li><%= link_to 'Log in', new_session_path %></li>
-        <li><%= link_to 'Sign up', new_user_path, class: 'waves-effect waves-light btn' %></li>
+        <li><%= render '/layouts/manage_users' %></li>
+        <%= render '/layouts/log_in_sign_up', desktop_style: 'waves-effect waves-light btn' %>
+        <li><%= render '/layouts/log_out'%></li>
       </ul>
 
       <div class='right side-nav' id='nav-mobile'>
@@ -15,10 +15,10 @@
             <%= render '/movies/search' %>
           </div>
         <ul>
-          <li><%= link_to 'Log in', new_session_path %></li>
-          <li><%= link_to 'Sign up', new_user_path %></li>
+          <%= render '/layouts/log_in_sign_up', desktop_style: '' %>
           <li><%= link_to 'Submit movie', new_movie_path %></li>
-          <li><%= link_to 'Manage users', admin_users_path %></li>
+          <li><%= render '/layouts/manage_users' %></li>
+          <li><%= render '/layouts/log_out'%></li>
         </ul>
       </div>
 
