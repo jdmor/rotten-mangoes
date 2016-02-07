@@ -1,20 +1,27 @@
 <header>
   <nav>
     <div class="nav-wrapper">
-    <a href="#!" class="brand-logo">Rotten Mangoes</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#!" class="brand-logo">Rotten Mangoes</a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><%= link_to 'Submit movie', new_movie_path %></li>
         <li><%= link_to 'Manage users', admin_users_path %></li>
         <li><%= link_to 'Log in', new_session_path %></li>
         <li><%= link_to 'Sign up', new_user_path, class: 'waves-effect waves-light btn' %></li>
       </ul>
-      <ul class="right side-nav" id="mobile-demo">
-        <li><%= link_to 'Log in', new_session_path %></li>
-        <li><%= link_to 'Sign up', new_user_path %></li>
-        <li><%= link_to 'Submit movie', new_movie_path %></li>
-        <li><%= link_to 'Manage users', admin_users_path %></li>
-      </ul>
+
+      <div class='right side-nav' id='nav-mobile'>
+          <div class='search-wrapper'>
+            <%= render '/movies/search' %>
+          </div>
+        <ul>
+          <li><%= link_to 'Log in', new_session_path %></li>
+          <li><%= link_to 'Sign up', new_user_path %></li>
+          <li><%= link_to 'Submit movie', new_movie_path %></li>
+          <li><%= link_to 'Manage users', admin_users_path %></li>
+        </ul>
+      </div>
+
     </div>
   </nav>
 </header>
