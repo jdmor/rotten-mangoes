@@ -1,17 +1,19 @@
+// To order later
+
+// GENERAL
+
 .card-content form label, .card-content span.caret {
   color: inherit;
 }
 
-// To order later
-
-
 .image-full {
-
   img {
     width: 100%;
     display: block;
   }
 }
+
+// MOVIE LIST
 
 .row.list-movies {
   margin-left: 0;
@@ -22,6 +24,20 @@
   }
 }
 
+.movie-card {
+  box-shadow: 0;
+  transition: transform .5s, box-shadow .5s;
+
+  @media screen and (min-width: 601px) {
+    &:hover {
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      transform: scale(1.1);
+    }
+  }
+
+}
 
 @media screen and (max-width: 992px) {
   .movie-card:nth-child(4n) {
@@ -32,6 +48,7 @@
 .movie-card-info {
   padding: .5rem;
   padding-bottom: 1rem;
+  background: #FFF;
 }
 
 .movie-card-title {

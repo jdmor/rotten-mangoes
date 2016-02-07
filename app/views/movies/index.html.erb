@@ -37,8 +37,8 @@
 </div>
 
 <div class='row list-movies'>
-  <% @movies.each.with_index do |movie, index| %>
-    <%= render 'movie', movie: movie, index: index %>
+  <% @movies.each do |movie| %>
+    <%= render 'movie', movie: movie %>
   <% end %>
 </div>
 </div>
