@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require materialize/bin/materialize
+//= require main-nav
 //= require turbolinks
