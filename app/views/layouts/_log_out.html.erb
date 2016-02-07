@@ -1,3 +1,5 @@
 <% if current_user %>
-  <%= link_to 'Log out', session_path('current'), method: :delete %>
+  <%= link_to session_path, method: :delete do %>
+    Log out (<%= current_user.firstname %>)
+  <% end %>
 <% end %>
