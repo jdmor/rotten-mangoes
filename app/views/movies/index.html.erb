@@ -1,29 +1,52 @@
-<%= link_to 'Submit a movie!', new_movie_path %>
-<hr>
+<div class='container'>
 
-<%= form_tag movies_path, method: :get do %>
-  <div>
-    <%= text_field_tag :search_term, params[:search_term]  %>
-  </div>
-  <div>
-    <%= label_tag :runtime_in_minutes %><br>
-    <%= select_tag :runtime_in_minutes, options_for_select(
-      [
-        ['', ''],
-        ['Under 90 minutes', 'less_than_90'],
-        ['Between 90 and 120 minutes', 'between_90_and_120'],
-        ['Over 120 minutes', 'greater_than_120']
-      ],
-      params[:runtime_in_minutes]
-    )%>
-  </div>
-  <div>
-    <%= submit_tag 'Search' %>
-  </div>
-<% end %>
+<div class='row section'>
+  <div class='col s12 m8 offset-m2'>
+  <div class='card blue-grey darken-4'>
+    <div class='card-content white-text'>
+    <%= form_tag movies_path, method: :get do %>
 
-<hr>
+      <div class='row'>
+        <div class='input-field col s12'>
+          <%= text_field_tag :search_term, params[:search_term] %>
+          <%= label_tag :search_term, 'Search by title and director'%>
+        </div>
+      </div>
 
-<% @movies.each do |movie| %>
-  <%= render 'movie', movie: movie %>
-<% end %>
+      <div class='row'>
+        <div class='input-field col s12'>
+          <%= select_tag :runtime_in_minutes, options_for_select(
+            [
+              ['Any length', ''],
+              ['Under 90 minutes', 'less_than_90'],
+              ['Between 90 and 120 minutes', 'between_90_and_120'],
+              ['Over 120 minutes', 'greater_than_120']
+            ],
+            params[:runtime_in_minutes]
+          )%>
+          <%= label_tag :runtime_in_minutes, 'Filter by movie length' %>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class="col s12">
+          <%= button_tag 'Search', class: 'btn waves-effect waves-light' %>
+        </div>
+      </div>
+
+    <% end %>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <%= link_to 'Submit a movie!', new_movie_path %>
+
+
+
+
+  <% @movies.each do |movie| %>
+    <%= render 'movie', movie: movie %>
+  <% end %>
+
+</div>

@@ -11,4 +11,5 @@
  *= require_self
  *= require materialize/materialize
  *= require main-nav
+ *= require form
  */
