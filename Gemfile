@@ -50,7 +50,7 @@ gem 'bcrypt-ruby', '~> 3.0x.0'
 # gem 'debugger', group: [:development, :test]
 
 # Use Pry for debugging
-gem 'pry'
+gem 'pry', group: :development
 
 # Use RMagick and Carrierwave for image uploading
 gem 'rmagick'
