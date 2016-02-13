@@ -5,8 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.0'
 
 # Use sqlite3 as the database for Active Record
-# Only use for development
-# gem 'sqlite3'
+gem 'sqlite3', group: :development
 
 # Use pg as the database for Active Record
 gem 'pg'
