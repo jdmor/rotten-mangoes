@@ -59,3 +59,6 @@ gem 'carrierwave'
 
 # Use Kaminari for pagination
 gem 'kaminari'
+
+# Use rails 12factor for serving static assets on Heroku
+gem 'rails_12factor', group: :production
