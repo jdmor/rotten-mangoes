@@ -1,8 +1,25 @@
 <div class='container'>
 
-<div class='row list-movies section'>
-  <% @movies.each do |movie| %>
-    <%= render 'movie', movie: movie %>
-  <% end %>
+<div class='row section'>
+  <div class='col s12'>
+    <h4>In Theaters</h4>
+    <div class='row list-movies section'>
+      <% @movies.each do |movie| %>
+        <%= render 'movie', movie: movie %>
+      <% end %>
+    </div>
+  </div>
 </div>
+
+<div class='row section'>
+  <div class='col s12'>
+    <h4>Classics</h4>
+    <div class='row list-movies section'>
+      <% @movies.each do |movie| %>
+        <%= render 'movie', movie: movie %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
 </div>

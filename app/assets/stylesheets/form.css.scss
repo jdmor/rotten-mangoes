@@ -50,13 +50,13 @@
 }
 
 @media screen and (max-width: 992px) {
-  .movie-card:nth-child(4n) {
+  .movie-card:nth-child(3n + 1) {
     clear: left;
   }
 }
 
 @media screen and (min-width: 993px) {
-  .movie-card:nth-child(5n) {
+  .movie-card:nth-child(4n + 1) {
     clear: left;
   }
 }
