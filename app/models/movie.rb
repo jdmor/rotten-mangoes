@@ -21,6 +21,8 @@ class Movie < ActiveRecord::Base
 
   validate :release_date_is_in_the_past
 
+  default_scope { order(:release_date).reverse_order }
+
   def release_date_is_in_the_past
     if release_date.present?
       errors.add(:release_date, 'should be in the past') if release_date > Date.today
