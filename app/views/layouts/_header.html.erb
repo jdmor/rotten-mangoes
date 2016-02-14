@@ -15,7 +15,8 @@
         <ul class="right nav-options">
 
           <li class='hide-on-med-and-down search-wrapper-desktop'>
-            <form class='row'>
+            <%= form_tag movies_path, method: :get, class: 'row' do %>
+            <!-- <form class='row'> -->
                 <div class="file-field input-field card col">
                   <div class='btn'>
                     <span><i class="material-icons">search</i></span>
@@ -35,7 +36,8 @@
                     params[:runtime_in_minutes])
                     %>
                   </div>
-              </form>
+              <!-- </form> -->
+              <% end %>
           </li>
 
           <li><a id='show-search' class='hide-on-large-only'>Search
@@ -48,12 +50,12 @@
 
       <div class='container' id='search-box' style='display: none;'>
         <div class="row search-wrapper">
-          <form class='col s12'>
+          <%= form_tag movies_path, method: :get, class: 'col s12' do %>
             <div class='row'>
               <div class="file-field input-field card">
-                <div class='btn'>
+                <%= button_tag '', class: 'btn material-icons' do %>
                   <span><i class="material-icons">search</i></span>
-                </div>
+                <% end %>
                 <div class='file-path-wrapper'>
                   <%= text_field_tag :search_term, params[:search_term], class: 'file-path', placeholder: 'Search by title and director' %>
                 </div>
@@ -72,7 +74,7 @@
                   %>
                 </div>
               </div>
-            </form>
+            <% end %>
           </div>
       </div>
     </div>
