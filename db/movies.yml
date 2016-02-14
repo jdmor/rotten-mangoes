@@ -1,0 +1,41 @@
+In Bruges:
+  director: Martin McDonagh
+  runtime_in_minutes: 107
+  description: Guilt-stricken after a job gone wrong, hitman Ray and his partner await orders from their ruthless boss in Bruges, Belgium, the last place in the world Ray wants to be.
+  poster_image: large_in-brudges.jpg
+  release_date: 2008-02-29 00:00:00
+
+K-PAX:
+  director: Iain Softley
+  runtime_in_minutes: 120
+  description: PROT is a patient at a mental hospital who claims to be from a far away Planet. His psychiatrist tries to help him, only to begin to doubt his own explanations.
+  poster_image: MV5BOTY4MTA5NDk3MV5BMl5BanBnXkFtZTgwMTA5MDgxMTE_._...
+  release_date: 2001-10-02 00:00:00
+
+Spirited Away:
+  director: Hayao Miyazaki
+  runtime_in_minutes: 125
+  description: During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.
+  poster_image: 41joy_rrchl_1_.jpg
+  release_date: 2003-03-28 00:00:00
+
+Star Wars:
+  director: George Lucas
+  runtime_in_minutes: 121
+  description: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.
+  poster_image: newhopemain.jpg
+  release_date: 1977-05-25 00:00:00
+
+Spectre:
+  director: Sam Mendes
+  runtime_in_minutes: 89
+  description: A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.
+  poster_image: SPECTRE-Movie-Poster-2.jpg
+  release_date: 2015-11-04 00:00:00
+
+The Breakfast Club:
+  director: John Hughes
+  runtime_in_minutes: 97
+  description: Five high school students, all different stereotypes, meet in detention, where they pour their hearts out to each other, and discover how they have a lot more in common than they thought.
+  poster_image: the-breakfast-club-movie-poster-1985-1020468204-se...
+  release_date: 1985-02-05 00:00:00

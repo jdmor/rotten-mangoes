@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+movies_seed_data_path = File.expand_path('../movies.yml', __FILE__)
+movies = YAML.load_file(movies_seed_data_path)
+
+movies.each do |movie|
+  Movie.create(
+    title: movie[0],
+    director: movie[1]['director'],
+    runtime_in_minutes: movie[1]['runtime_in_minutes'],
+    description: movie[1]['description'],
+    poster_image: movie[1]['poster_image'],
+    release_date: movie[1]['release_date']
+  )
+end
