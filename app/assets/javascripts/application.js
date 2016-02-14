@@ -10,10 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-// require jquery
-//= require jquery/jquery-2.2.0
+//= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require materialize/bin/materialize
 //= require main-nav
 //= require form
 //= require turbolinks
+
