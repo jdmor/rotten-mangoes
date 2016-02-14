@@ -16,11 +16,10 @@
 
           <li class='hide-on-med-and-down search-wrapper-desktop'>
             <%= form_tag movies_path, method: :get, class: 'row' do %>
-            <!-- <form class='row'> -->
                 <div class="file-field input-field card col">
-                  <div class='btn'>
+                  <%= button_tag '', class: 'btn material-icons' do %>
                     <span><i class="material-icons">search</i></span>
-                  </div>
+                  <% end %>
                   <div class='file-path-wrapper'>
                     <%= text_field_tag :search_term, params[:search_term], class: 'file-path', placeholder: 'Search by title and director' %>
                   </div>
@@ -36,7 +35,6 @@
                     params[:runtime_in_minutes])
                     %>
                   </div>
-              <!-- </form> -->
               <% end %>
           </li>
 
