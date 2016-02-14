@@ -1,21 +1,18 @@
 <header>
+
+  <ul id="main-menu-dropdown" class="dropdown-content">
+    <%= render '/layouts/log_in_sign_up' %>
+    <li><%= link_to 'Submit movie', new_movie_path %></li>
+    <%= render '/layouts/manage_users' %>
+    <%= render '/layouts/log_out'%>
+  </ul>
+
   <nav>
     <div class='container'>
       <div class="nav-wrapper">
-        <%= link_to 'Rotten Mangoes', root_path, class: 'brand-logo' %>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><%= link_to 'Submit movie', new_movie_path %></li>
-          <li><%= render '/layouts/manage_users' %></li>
-          <%= render '/layouts/log_in_sign_up', desktop_style: 'waves-effect waves-light btn' %>
-          <li><%= render '/layouts/log_out'%></li>
-        </ul>
-
-        <ul class='right side-nav' id='nav-mobile'>
-          <%= render '/layouts/log_in_sign_up', desktop_style: '' %>
-          <li><%= link_to 'Submit movie', new_movie_path %></li>
-          <li><%= render '/layouts/manage_users' %></li>
-          <li><%= render '/layouts/log_out'%></li>
+        <%= link_to 'RM', root_path, class: 'brand-logo' %>
+        <ul class="right">
+          <li><a class="dropdown-button" data-beloworigin="true" data-constrainwidth="false" href="#!" data-activates="main-menu-dropdown">Menu<i class="material-icons right">menu</i></a></li>
         </ul>
       </div>
     </div>
