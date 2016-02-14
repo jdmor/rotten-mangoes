@@ -13,7 +13,32 @@
       <div class='container'>
         <%= link_to 'RM', root_path, class: 'brand-logo' %>
         <ul class="right nav-options">
-          <li><a id='show-search'>Search
+
+          <li class='hide-on-med-and-down'>
+            <form class='row'>
+                <div class="file-field input-field card col s6">
+                  <div class='btn'>
+                    <span><i class="material-icons">search</i></span>
+                  </div>
+                  <div class='file-path-wrapper'>
+                    <%= text_field_tag :search_term, params[:search_term], class: 'file-path', placeholder: 'Search by title and director' %>
+                  </div>
+                </div>
+
+                <div class='input-field col s6'>
+                  <%= select_tag :runtime_in_minutes,
+                  options_for_select([
+                    ['Filter by length', ''],
+                    ['Under 90 mins', 'less_than_90'],
+                    ['Between 90 and 120 mins', 'between_90_and_120'],
+                    ['Over 120 mins', 'greater_than_120']],
+                    params[:runtime_in_minutes])
+                    %>
+                  </div>
+              </form>
+          </li>
+
+          <li><a id='show-search' class='hide-on-large-only'>Search
             <i class="material-icons right">search</i>
             <i class='mdi-content-clear right is-transparent'></i>
           </a></li>
