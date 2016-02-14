@@ -14,9 +14,9 @@
         <%= link_to 'RM', root_path, class: 'brand-logo' %>
         <ul class="right nav-options">
 
-          <li class='hide-on-med-and-down'>
+          <li class='hide-on-med-and-down search-wrapper-desktop'>
             <form class='row'>
-                <div class="file-field input-field card col s6">
+                <div class="file-field input-field card col">
                   <div class='btn'>
                     <span><i class="material-icons">search</i></span>
                   </div>
@@ -25,7 +25,7 @@
                   </div>
                 </div>
 
-                <div class='input-field col s6'>
+                <div class='input-field col'>
                   <%= select_tag :runtime_in_minutes,
                   options_for_select([
                     ['Filter by length', ''],

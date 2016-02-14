@@ -82,6 +82,35 @@ nav {
   position: relative;
 }
 
+// Search bar desktop
+
+.search-wrapper-desktop {
+  margin-top: 0.6rem;
+
+  .col.input-field,
+  .file-path-wrapper,
+  .file-path-wrapper .file-path,
+  .file-field .btn,
+  .btn .material-icons {
+    height: 3rem;
+    line-height: 3rem;
+  }
+
+  .col.input-field {
+    // width: 48%;
+    font-size: 1rem;
+  }
+
+  .file-path {
+    font-size: 1rem;
+  }
+
+  .col.file-field {
+    padding: 0;
+  }
+
+}
+
 // States
 
 .is-hidden {
@@ -97,5 +126,25 @@ nav {
 @media screen and (max-width: 600px) {
   nav .container:first-child {
     height: 56px;
+  }
+}
+
+// Desktop
+
+@media screen and (min-width: 993px) {
+  .nav-options {
+    width: 90%;
+  }
+
+  .search-wrapper-desktop {
+    width: calc(100% - 113px);
+  }
+
+  nav .input-field.col {
+    width: 31%;
+  }
+
+  nav .file-field.card {
+    width: 64%;
   }
 }
