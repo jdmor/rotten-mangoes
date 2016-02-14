@@ -19,3 +19,6 @@ secret_token.rb
 
 # Ignore personal development notes
 dev-notes.md
+
+# Ignore uploaded images
+/public/uploads/movie/poster_image
