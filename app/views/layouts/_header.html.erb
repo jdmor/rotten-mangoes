@@ -8,12 +8,48 @@
   </ul>
 
   <nav>
-    <div class='container'>
-      <div class="nav-wrapper">
+    <div class="nav-wrapper">
+
+      <div class='container'>
         <%= link_to 'RM', root_path, class: 'brand-logo' %>
-        <ul class="right">
+        <ul class="right nav-options">
+          <li><a id='show-search'>Search
+            <i class="material-icons right">search</i>
+            <i class='mdi-content-clear right is-transparent'></i>
+          </a></li>
           <li><a class="dropdown-button" data-beloworigin="true" data-constrainwidth="false" href="#!" data-activates="main-menu-dropdown">Menu<i class="material-icons right">menu</i></a></li>
         </ul>
+      </div>
+
+      <div class='container' id='search-box' style='display: none;'>
+        <div class="row search-wrapper">
+          <form class='col s12'>
+            <div class='row'>
+              <div class="file-field input-field card">
+                <div class='btn'>
+                  <span><i class="material-icons">search</i></span>
+                </div>
+                <div class='file-path-wrapper'>
+                  <!-- <input class='file-path' type='search'> -->
+                  <%= text_field_tag :search_term, params[:search_term], class: 'file-path', placeholder: 'Search by title and director' %>
+                </div>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <%= select_tag :runtime_in_minutes,
+                options_for_select([
+                  ['Filter by length', ''],
+                  ['Under 90 mins', 'less_than_90'],
+                  ['Between 90 and 120 mins', 'between_90_and_120'],
+                  ['Over 120 mins', 'greater_than_120']],
+                  params[:runtime_in_minutes])
+                  %>
+                </div>
+              </div>
+            </form>
+          </div>
       </div>
     </div>
   </nav>

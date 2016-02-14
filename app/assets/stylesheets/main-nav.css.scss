@@ -1,3 +1,99 @@
-nav .search-wrapper {
-  background-color: #ee6e73;
+nav {
+  height: auto;
+
+  .container:first-child {
+    height: 64px;
+  }
+
+  .brand-logo {
+    position: static;
+    left: 0;
+    transform: translatex(0%);
+  }
+
+  .mdi-content-clear {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 28px;
+  }
+
+  // General fields
+
+  .input-field {
+    height: 56px;
+  }
+
+  // Search field
+
+  .search-wrapper {
+    margin-top: 1.5rem;
+  }
+
+  .file-field {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .file-field .btn {
+    float: right;
+    height: 56px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 1.25rem;
+  }
+
+  .btn .material-icons {
+    height: 56px;
+    line-height: 56px;
+  }
+
+  .file-path-wrapper {
+    padding-right: .75rem;
+  }
+
+  .file-path-wrapper .file-path {
+    height: 56px;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    line-height: 56px;
+  }
+
+  // Filter by length field
+
+  .row:last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .select-wrapper input.select-dropdown {
+    border-color: #000;
+  }
+
+  .caret {
+    line-height: 16px;
+  }
+
+}
+
+#show-search {
+  position: relative;
+}
+
+// States
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-transparent { // Deals with FOUC
+  opacity: 0 !important;
+}
+
+// Mobile
+
+@media screen and (max-width: 600px) {
+  nav .container:first-child {
+    height: 56px;
+  }
 }
