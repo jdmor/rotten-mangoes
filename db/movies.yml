@@ -26,12 +26,11 @@ Star Wars:
   poster_image: newhopemain.jpg
   release_date: 1977-05-25 00:00:00
 
-Spectre:
+Skyfall:
   director: Sam Mendes
-  runtime_in_minutes: 89
-  description: A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.
-  poster_image: SPECTRE-Movie-Poster-2.jpg
-  release_date: 2015-11-04 00:00:00
+  runtime_in_minutes: 143
+  description: Bond's loyalty to M is tested when her past comes back to haunt her. Whilst MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.
+  release_date: 2012-11-09 00:00:00
 
 The Breakfast Club:
   director: John Hughes
@@ -39,3 +38,63 @@ The Breakfast Club:
   description: Five high school students, all different stereotypes, meet in detention, where they pour their hearts out to each other, and discover how they have a lot more in common than they thought.
   poster_image: the-breakfast-club-movie-poster-1985-1020468204-se...
   release_date: 1985-02-05 00:00:00
+
+Lucky Number Slevin:
+  director: Paul McGuigan
+  runtime_in_minutes: 110
+  description: "A case of mistaken identity lands Slevin into the middle of a war being plotted by two of the city's most rival crime bosses: The Rabbi and The Boss. Slevin is under constant surveillance by relentless Detective Brikowski as well as the infamous assassin Goodkat and finds himself having to hatch his own ingenious plot to get them before they get him."
+  release_date: 2006-04-07 00:00:00
+
+Tekkonkinkreet:
+  director: Michael Arias
+  runtime_in_minutes: 111
+  description: Black and White, two street urchins, battle an array of old-word Yakuza and alien assassins vying to rule the decaying metropolis of Treasure Town - where the moon smiles and young boys can fly.
+  release_date: 2006-12-23 00:00:00
+
+Deadpool:
+  director: Tim Miller
+  runtime_in_minutes: 108
+  description: A former Special Forces operative turned mercenary is subjected to a rogue experiment that leaves him with accelerated healing powers, adopting the alter ego Deadpool.
+  release_date: 2016-02-12 00:00:00
+
+Zoolander:
+  director: Ben Stiller
+  runtime_in_minutes: 102
+  description: Derek and Hansel are modelling again when an opposing company attempts to take them out from the business.
+  release_date: 2016-02-12 00:00:00
+
+How to Be Single:
+  director: Christian Ditter
+  runtime_in_minutes: 110
+  description: New York City is full of lonely hearts seeking the right match, and what Alice, Robin, Lucy, Meg, Tom and David all have in common is the need to learn how to be single in a world filled with ever-evolving definitions of love.
+  release_date: 2016-02-12 00:00:00
+
+Where to Invade Next:
+  director: Michael Moore
+  runtime_in_minutes: 119
+  description: To learn what the USA can learn from other nations, Michael Moore playfully "invades" them to see what they have to offer.
+  release_date: 2016-02-25 00:00:00
+
+Fitoor:
+  director: Abhishek Kapoor
+  runtime_in_minutes: 131
+  description: Thirteen-year-old Noor falls in love with Firdaus, daughter of Begum, the wealthiest woman in town. As their potential romance grows despite their class issues, the vengeful Begum plots retribution on their young and innocent love.
+  release_date: 2016-02-12 00:00:00
+
+Of Mind and Music:
+  director: Richie Adams
+  runtime_in_minutes: 98
+  description: A story about a beautiful street musician suffering from memory loss and a disheartened neuroscientist intent on helping her, bringing together the city of New Orleans and the jazz that made it famous.
+  release_date: 2016-02-12 00:00:00
+
+Providence:
+  director: Sharon Wilharm
+  runtime_in_minutes: 79
+  description: Rachel Cartwright and Mitchell Little both grow up in the small town of Providence, Tennessee. Their paths keep crossing and at one point it looks like they'll finally get together. But the opportunity slips away and they go their separate ways. It takes a tragedy many years later before they're reunited.
+  release_date: 2016-02-12 00:00:00
+
+Touched With Fire:
+  director: Paul Dalio
+  runtime_in_minutes: 110
+  description: Two manic depressives meet in a psychiatric hospital and begin a romance that brings out all of the beauty and horror of their condition.
+  release_date: 2016-02-12 00:00:00
