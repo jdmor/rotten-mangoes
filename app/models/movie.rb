@@ -23,6 +23,8 @@ class Movie < ActiveRecord::Base
 
   default_scope { order(:release_date).reverse_order }
 
+  scope :recent, -> { where("release_date > ?", Date.today - 60)}
+
   def release_date_is_in_the_past
     if release_date.present?
       errors.add(:release_date, 'should be in the past') if release_date > Date.today
