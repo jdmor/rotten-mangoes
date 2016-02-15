@@ -21,3 +21,6 @@ dev-notes.md
 
 # Ignore uploaded images
 /public/uploads/movie/poster_image
+
+# Ignore AI files
+rm-logo.ai
