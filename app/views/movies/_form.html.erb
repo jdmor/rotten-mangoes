@@ -1,14 +1,25 @@
-<%= form_for @movie, html: { multipart: true } do |f| %>
-  <% if @movie.errors.any? %>
+<!--
+Issue: After failed form submission, form input labels no longer
+  move above the text input area after focus. Will inspect issue
+  at a later date.
+ -->
+
+<div class='row'>
+  <div class='col s12'>
+   <% if @movie.errors.any? %>
     <div>
       <%= pluralize(@movie.errors.count, 'error') %> prevented this movie from being submitted:
       <ul>
         <% @movie.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
+        <li><%= msg %></li>
         <% end %>
       </ul>
     </div>
   <% end %>
+  </div>
+</div>
+
+<%= form_for @movie, html: { multipart: true } do |f| %>
 
   <div class='row'>
     <div class='input-field col s12'>
