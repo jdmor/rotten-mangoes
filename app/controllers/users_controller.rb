@@ -27,7 +27,7 @@ class UsersController < ApplicationController
     if current_user && current_user.admin == true
       redirect_to new_user_path, notice: "You've created an account for #{@user.firstname}."
     else
-      redirect_to movies_path, notice: "Welcome aboard, #{@user.firstname}!!"
+      redirect_to movies_path, notice: "Welcome aboard, #{@user.firstname}!"
     end
   end
 
