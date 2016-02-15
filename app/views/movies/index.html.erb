@@ -15,7 +15,7 @@
   <div class='col s12'>
     <h4>Classics</h4>
     <div class='row list-movies section'>
-      <% @movies.each do |movie| %>
+      <% @movies.classics.each do |movie| %>
         <%= render 'movie', movie: movie %>
       <% end %>
     </div>
