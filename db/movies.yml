@@ -4,6 +4,7 @@ In Bruges:
   description: Guilt-stricken after a job gone wrong, hitman Ray and his partner await orders from their ruthless boss in Bruges, Belgium, the last place in the world Ray wants to be.
   poster_image: large_in-brudges.jpg
   release_date: 2008-02-29 00:00:00
+  classic: true
 
 K-PAX:
   director: Iain Softley
@@ -11,6 +12,7 @@ K-PAX:
   description: PROT is a patient at a mental hospital who claims to be from a far away Planet. His psychiatrist tries to help him, only to begin to doubt his own explanations.
   poster_image: MV5BOTY4MTA5NDk3MV5BMl5BanBnXkFtZTgwMTA5MDgxMTE_._...
   release_date: 2001-10-02 00:00:00
+  classic: true
 
 Spirited Away:
   director: Hayao Miyazaki
@@ -18,6 +20,7 @@ Spirited Away:
   description: During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.
   poster_image: 41joy_rrchl_1_.jpg
   release_date: 2003-03-28 00:00:00
+  classic: true
 
 Star Wars:
   director: George Lucas
@@ -25,12 +28,14 @@ Star Wars:
   description: Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader.
   poster_image: newhopemain.jpg
   release_date: 1977-05-25 00:00:00
+  classic: true
 
 Skyfall:
   director: Sam Mendes
   runtime_in_minutes: 143
   description: Bond's loyalty to M is tested when her past comes back to haunt her. Whilst MI6 comes under attack, 007 must track down and destroy the threat, no matter how personal the cost.
   release_date: 2012-11-09 00:00:00
+  classic: true
 
 The Breakfast Club:
   director: John Hughes
@@ -38,18 +43,21 @@ The Breakfast Club:
   description: Five high school students, all different stereotypes, meet in detention, where they pour their hearts out to each other, and discover how they have a lot more in common than they thought.
   poster_image: the-breakfast-club-movie-poster-1985-1020468204-se...
   release_date: 1985-02-05 00:00:00
+  classic: true
 
 Lucky Number Slevin:
   director: Paul McGuigan
   runtime_in_minutes: 110
   description: "A case of mistaken identity lands Slevin into the middle of a war being plotted by two of the city's most rival crime bosses: The Rabbi and The Boss. Slevin is under constant surveillance by relentless Detective Brikowski as well as the infamous assassin Goodkat and finds himself having to hatch his own ingenious plot to get them before they get him."
   release_date: 2006-04-07 00:00:00
+  classic: true
 
 Tekkonkinkreet:
   director: Michael Arias
   runtime_in_minutes: 111
   description: Black and White, two street urchins, battle an array of old-word Yakuza and alien assassins vying to rule the decaying metropolis of Treasure Town - where the moon smiles and young boys can fly.
   release_date: 2006-12-23 00:00:00
+  classic: true
 
 Deadpool:
   director: Tim Miller

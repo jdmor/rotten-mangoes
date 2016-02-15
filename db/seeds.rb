@@ -8,6 +8,7 @@ movies.each do |movie|
     runtime_in_minutes: movie[1]['runtime_in_minutes'],
     description: movie[1]['description'],
     poster_image: movie[1]['poster_image'],
-    release_date: movie[1]['release_date']
+    release_date: movie[1]['release_date'],
+    classic: movie[1]['classic']
   )
 end
