@@ -1,6 +1,7 @@
 $(function() {
-  if ($('h4').data('search-results')) {
+  if ($('h4').data('search-results') && window.innerWidth < 993) {
     $('#search-box').show();
+    $('#show-search .material-icons').addClass('is-transparent').siblings().removeClass('is-transparent');
   }
 
   $('#show-search').on('click', function() {
