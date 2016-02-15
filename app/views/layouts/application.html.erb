@@ -10,9 +10,15 @@
 </head>
 <body>
   <%= render 'layouts/header' %>
-  <% flash.each do |key, value| %>
-    <%= content_tag(:div, value) %>
+
+  <% if flash %>
+    <ul id='flash-messages' class='is-hidden'>
+    <% flash.each do |key, value| %>
+      <li data-flash-message='<%= value %>'></li>
+    <% end %>
+    </ul>
   <% end %>
+
   <main>
     <%= yield %>
   </main>

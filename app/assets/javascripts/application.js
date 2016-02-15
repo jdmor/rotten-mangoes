@@ -17,4 +17,5 @@
 //= require main-nav
 //= require form
 //= require turbolinks
+//= require flash
 
