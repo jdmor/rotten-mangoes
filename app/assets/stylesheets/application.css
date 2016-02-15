@@ -10,7 +10,8 @@
  *
  *= require_self
  *= require materialize/materialize
+ *= require general
  *= require main-nav
- *= require form
  *= require footer
+ *= require movies
  */
