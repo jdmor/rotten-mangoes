@@ -1,5 +1,16 @@
-<h1>Create User Account</h1>
+<div class='container'>
+  <div class='row section'>
+    <div class='col s12 m8 offset-m2'>
+      <div class='card blue-grey darken-4'>
 
-<%= form_for [:admin, @user] do |f| %>
-    <%= render '/users/form', f: f %>
-<% end %>
+        <div class='card-content white-text'>
+          <span class='card-title'>Create User Account</span>
+          <%= form_for [:admin, @user] do |f| %>
+          <%= render '/users/form', f: f %>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
