@@ -1,34 +1,45 @@
-<h1>Users in Rotten Mangoes</h1>
+<div class='container'>
+ <div class'row'>
+   <div class='col s12'>
 
-<%= link_to 'Create User', new_admin_user_path %>
+    <h4>Users in Rotten Mangoes</h4>
 
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Email</th>
-      <th>Admin</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= user.id %></td>
-        <td><%= user.firstname %></td>
-        <td><%= user.lastname %></td>
-        <td><%= user.email %></td>
-        <td><%= user.admin %></td>
-        <td><%= link_to 'Edit', edit_admin_user_path(user) %></td>
-        <td>
-          <%= form_for [:admin, user], method: :delete do |f| %>
-            <%= f.submit 'Delete' %>
-          <% end %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    <%= link_to 'Create User', new_admin_user_path %>
 
-<%= paginate @users %>
+    <table class='responsive-table highlight'>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Admin</th>
+          <th>Remove Accounts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+        <tr>
+          <td><%= user.id %></td>
+          <td>
+            <%= link_to edit_admin_user_path(user) do%>
+              <i class="material-icons">mode_edit</i>
+              <span><%= user.full_name %></span>
+            <% end %>
+          </td>
+          <td><%= user.email %></td>
+          <td><%= user.admin %></td>
+          <td>
+            <%= form_for [:admin, user], method: :delete do |f| %>
+              <%= f.submit 'Delete', class: 'waves-effect waves-light btn'%>
+            <% end %>
+          </td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+
+    <%= paginate @users %>
+
+    </div>
+  </div>
+</div>
