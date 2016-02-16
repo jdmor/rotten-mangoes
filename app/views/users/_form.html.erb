@@ -9,30 +9,46 @@
 </div>
 <% end %>
 
-<div>
-  <%= f.label :email %><br>
-  <%= f.text_field :email %>
+<div class='row'>
+  <div class='input-field col s12'>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
 </div>
-<div>
-  <%= f.label :firstname, 'First Name' %><br>
-  <%= f.text_field :firstname %>
+<div class='row'>
+  <div class='input-field col s12'>
+    <%= f.label :firstname, 'First Name' %>
+    <%= f.text_field :firstname %>
+  </div>
 </div>
-<div>
-  <%= f.label :lastname, 'Last Name' %><br>
-  <%= f.text_field :lastname %>
+<div class='row'>
+  <div class='input-field col s12'>
+    <%= f.label :lastname, 'Last Name' %>
+    <%= f.text_field :lastname %>
+  </div>
 </div>
-<div>
-  <%= f.label :password %><br>
-  <%= f.text_field :password %>
+<div class='row'>
+  <div class='input-field col s12'>
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
 </div>
-<div>
-  <%= f.label :password_confirmation %><br>
-  <%= f.text_field :password_confirmation %>
+<div class='row'>
+  <div class='input-field col s12'>
+    <%= f.label :password_confirmation %>
+    <%= f.text_field :password_confirmation %>
+  </div>
 </div>
 <% if current_user && current_user.admin %>
-<div>
-  <%= f.label :admin, 'Make admin' %><br>
-  <%= f.check_box :admin %>
+<div class='row'>
+  <div class='input-field col s12'>
+    <%= f.label :admin, 'Make admin' %>
+    <%= f.check_box :admin %>
+  </div>
 </div>
 <% end %>
-<div><%= f.submit 'Submit' %></div>
+<div class='row'>
+  <div class='col s12'>
+    <%= f.submit 'Submit', class: 'btn waves-effect waves-light' %>
+  </div>
+</div>
