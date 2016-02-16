@@ -13,7 +13,7 @@
           <th>Full Name</th>
           <th>Email</th>
           <th>Admin</th>
-          <th>Remove Accounts</th>
+          <th class='table-delete-col'>Remove Account</th>
         </tr>
       </thead>
       <tbody>
@@ -28,9 +28,11 @@
           </td>
           <td><%= user.email %></td>
           <td><%= user.admin %></td>
-          <td>
+          <td class='table-delete-col'>
             <%= form_for [:admin, user], method: :delete do |f| %>
-              <%= f.submit 'Delete', class: 'waves-effect waves-light btn'%>
+              <button type='submit' class='waves-effect waves-light delete-user btn'>
+                <i class='material-icons'>delete_forever</i>
+              </button>
             <% end %>
           </td>
         </tr>

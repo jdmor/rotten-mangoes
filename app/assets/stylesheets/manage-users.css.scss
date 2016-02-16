@@ -1,4 +1,24 @@
-table .material-icons {
-  position: relative;
-  top: 6px;
+table {
+  .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+  .table-delete-col {
+    text-align: center;
+  }
+
+  .btn.delete-user {
+    padding: 0 0.5rem;
+    background-color: #bf360c;
+
+    &:hover {
+      background-color: #e64a19;
+    }
+  }
+
+  .btn.delete-user .material-icons {
+    line-height: 1;
+    font-size: 1.5rem;
+  }
 }
