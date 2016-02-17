@@ -15,4 +15,5 @@
  *= require footer
  *= require movies
  *= require manage-users
+ *= require pagination
  */
