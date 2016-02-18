@@ -12,10 +12,10 @@ Ruby, Rails, ActiveRecord, PostgreSQL, JavaScript, JQuery, HTML, CSS/SASS
 
 ## Features
 
-- Search: visitors can search the movie database by title and director.
-- User Accounts: users can sign up and submit movies to the app database.
-- Admin Accounts: admins can manage user, including editing their information and removing their accounts.
-- Reviews: users can leave movie reviews and ratings.
+- Visitors can search the movie database by title and director.
+- Users can sign up and submit movies to the app database.
+- Users can leave movie reviews and ratings.
+- Admins can manage user, including editing their information and removing their accounts.
 
 ## Outstanding Tasks
 
